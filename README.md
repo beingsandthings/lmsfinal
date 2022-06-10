@@ -13,7 +13,7 @@
 ## 2. 사용 기술
 #### `Back-end`
   - Java 8
-  - Spring Boot 2.3
+  - Spring Boot 4.3
   - Oracle SQL
   - 
 #### `Front-end`
