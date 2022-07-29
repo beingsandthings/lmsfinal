@@ -37,14 +37,15 @@ public class LectureplanService implements InterLectureplanService {
 		return lctrplanvo;
 	}
 
-	// 메인 강의계획서 수정하기 
+	// 강의계획서 수정하기 
 	@Override
 	public int editlctrplan(LectureplanVO lctrplanvo) {
 		int n = dao.editlctrplan(lctrplanvo);
 		return n;
 	}
 
-	// 학과코드 가져오기 
+
+	// 학과코드 가져오기 (이따 대체할 것)
 	@Override
 	public String getmajorid(String subjectid) {
 		String majorid = dao.getmajorid(subjectid);
@@ -61,7 +62,7 @@ public class LectureplanService implements InterLectureplanService {
         return n;
 	}
 
-	// 강의계획서 코드 가져오기
+	// 강의계획서 코드 가져오기 (이따 대체할 것)
 	@Override
 	public String getSeq_lectureplan(String subjectid) {
 		String seq_lectureplan = dao.getSeq_lectureplan(subjectid);
@@ -88,5 +89,4 @@ public class LectureplanService implements InterLectureplanService {
 		int n = dao.editlctrplandetail(paraMap);
 		return n;
 	}
-
 }
